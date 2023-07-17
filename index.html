@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySQL Query Dashboard</title>
+</head>
+<body>
+  <h1>MySQL Query Dashboard</h1>
+
+  <form id="queryForm">
+    <label for="query">Query:</label>
+    <textarea id="query" name="query" rows="4" cols="50"></textarea>
+
+    <label for="executionTime">Execution Time:</label>
+    <input type="datetime-local" id="executionTime" name="executionTime">
+
+    <label for="host">Host:</label>
+    <input type="text" id="host" name="host">
+
+    <label for="schema">Schema Name:</label>
+    <input type="text" id="schema" name="schema">
+
+    <label for="table">Table to Change:</label>
+    <input type="text" id="table" name="table">
+
+    <button type="submit">Schedule Query</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
